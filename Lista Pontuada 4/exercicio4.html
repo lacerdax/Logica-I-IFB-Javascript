@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var nota1 = prompt("Primeira nota= ");
+	nota1 = Number(nota1);
+	var nota2 = prompt("Segunda nota= ");
+	nota2 = Number(nota2);
+	var nota3 = prompt("Terceira nota= ");
+	nota3 = Number(nota3);
+	function media(nota1, nota2, nota3){
+		media = (nota1 + nota2 + nota3) / 3;
+		document.write("digite nota 1: " + nota1 + "<br/>");
+		document.write("digite nota 2: " + nota2 + "<br/>");
+		document.write("digite nota 3: " + nota3 + "<br/>");
+		return media.toFixed(2);
+		
+	}
+	document.write("media aritmetica = " + media(nota1, nota2, nota3));	
+
+</script>
+</html>

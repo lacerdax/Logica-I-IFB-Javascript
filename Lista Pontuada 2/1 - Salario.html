@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+	<script type="text/javascript">
+		var salario = prompt("Informe o salário do funcionário: ")
+		salario = parseInt(salario)
+		var novo_salario = 0
+		if(salario < 500)
+		{
+			novo_salario = salario * 1.15
+		}
+		else if(salario <= 1000)
+		{
+			novo_salario = salario * 1.10
+		}
+		else{
+			novo_salario = salario * 1.05
+		}
+		alert("O novo salário é " + novo_salario)
+	</script>
+</html>

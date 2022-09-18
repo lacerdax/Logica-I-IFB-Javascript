@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function quadrado(x) {
+        return x * x
+      }
+
+      x = 2
+      y = quadrado(x * 2 + 5)
+      document.write('Valor de x: ' + x + '<br/>')
+      document.write('Valor de y: ' + y + '<br/>')
+      z = quadrado(quadrado(x))
+      document.write('Valor de z: ' + z)
+    </script>
+  </body>
+</html>

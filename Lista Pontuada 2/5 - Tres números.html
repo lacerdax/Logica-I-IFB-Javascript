@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body></body>
+  <script type="text/javascript">
+    var numero1 = parseInt(prompt('Insira o primeiro número: '))
+    var numero2 = parseInt(prompt('Insira o segundo número: '))
+    var numero3 = parseInt(prompt('Insira o terceiro número: '))
+    var maior = 0
+    if (numero1 >= numero2 && numero1 >= numero3) {
+      var maior = numero1
+      document.write(
+        'Primeiro número armazena a váriavel maior: ' + maior + '<br/>'
+      )
+    } else if (numero2 >= numero1 && numero2 >= numero3) {
+      var maior = numero2
+      document.write(
+        'Segundo número armazena a váriavel maior: ' + maior + '<br/>'
+      )
+    } else if (numero3 >= numero2 && numero3 >= numero1) {
+      var maior = numero3
+      document.write(
+        'Terceiro número armazena a váriavel maior: ' + maior + '<br/>'
+      )
+    }
+  </script>
+</html>

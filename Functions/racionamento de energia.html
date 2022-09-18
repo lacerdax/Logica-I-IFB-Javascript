@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Valor salário minimo: <input id="salario" />
+
+    Quantidade quilowatts gasto pela residência: <input id="quilowatts" />
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="valorKW">valor em reais de cada quilowatt</p>
+
+    <p id="valorReais">Valor em reais a ser pago</p>
+
+    <p id="desconto">Valor a ser pago com 10% de desconto</p>
+  </body>
+  <script>
+    function calcular() {
+      var salario = document.getElementById('salario').value
+      var quilowatts = document.getElementById('quilowatts').value
+      var calculo = salario / 7
+      var valorKW = calculo / 100
+      var valorRS = valorKW * quilowatts
+      var desconto = valorRS * 0.1
+      var resultado = valorRS - desconto
+      document.getElementById('valorKW').innerHTML =
+        'O valor de cada Kw em R$: ' + valorKW.toFixed(2)
+
+      document.getElementById('valorReais').innerHTML =
+        'O valor em reais a ser pago: ' + valorRS.toFixed(2)
+
+      document.getElementById('desconto').innerHTML =
+        'O valor com 10% de desconto: ' + resultado.toFixed(2)
+    }
+  </script>
+</html>

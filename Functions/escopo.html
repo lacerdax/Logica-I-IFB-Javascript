@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variáveis contadoras</title>
+  </head>
+  <body>
+    <button onclick="clicou()">Clique aqui!</button>
+    <p id="contador">Clique no botão</p>
+  </body>
+  <script>
+    var contador = 0
+    function clicou() {
+      contador = contador + 1
+      document.getElementById('contador').innerHTML =
+        'Você clicou ' + contador + ' vez(es)!'
+    }
+  </script>
+</html>

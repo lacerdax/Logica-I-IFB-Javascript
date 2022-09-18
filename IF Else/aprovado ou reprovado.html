@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aprovado ou Reprovado</title>
+  </head>
+  <body>
+    <script src="script.js">
+      var n1 = Number(prompt('Insira a nota 1: '))
+      var n2 = Number(prompt('Insira a nota 2: '))
+      var media = (n1 + n2)/2
+      var mediadistincao = 10
+      var aprovado = 7
+      if(media >= 7 && media <= 9.9){
+      	document.write('Aprovado')
+      } else if (media <= 6.9){
+      	document.write('Reprovado')
+      } else if (media == mediadistincao ){
+      	document.write('Aprovado com Distinção')
+      }
+    </script>
+  </body>
+</html>

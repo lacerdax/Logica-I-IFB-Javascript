@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Média</title>
+  </head>
+  <body></body>
+  <script>
+    var nota1 = Number(prompt('Insira o valor da nota 1: '))
+    var nota2 = Number(prompt('Insira o valor da nota 2: '))
+    var nota3 = Number(prompt('Insira o valor da nota 3: '))
+    var resultado = media(nota1, nota2, nota3)
+    function media(nota1, nota2, nota3) {
+      var media = (nota1 + nota2 + nota3) / 3
+      return media
+    }
+    document.write('Digite nota 1: ' + nota1 + '<br/>')
+    document.write('Digite nota 2: ' + nota2 + '<br/>')
+    document.write('Digite nota 3: ' + nota3 + '<br/>')
+    document.write('Média aritmética = ' + resultado.toFixed(2))
+  </script>
+</html>

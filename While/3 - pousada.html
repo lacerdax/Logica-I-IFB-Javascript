@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+  </head>
+  <body></body>
+  <script>
+    var nome = prompt('Insira o nome: ')
+    var dias = prompt('Insira a quantidade de dias: ')
+    var diaria = 40
+    var arrecadado = 0
+    var despesa = 0
+    while (dias == 0) {
+      var nome = prompt('Insira o nome: ')
+      var dias = prompt('Insira a quantidade de dias: ')
+      if (dias < 10) {
+        despesa = dias * diaria + 15
+        document.write(
+          nome + '<br/>' + ' Valor da conta: R$' + despesa + '<br/>'
+        )
+      } else if (dias >= 10) {
+        despesa = dias * diaria + 8
+        document.write(
+          nome + '<br/>' + ' Valor da conta: R$' + despesa + '<br/>'
+        )
+      }
+      arrecadado = diaria * 30
+      document.write('Valor arrecadado ao fim do mês: R$' + arrecadado)
+    }
+  </script>
+</html>

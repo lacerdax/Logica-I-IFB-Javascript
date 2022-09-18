@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var idade = 0
+    var contador1 = 0
+    var contador2 = 0
+    do {
+      idade = prompt('Informe uma idade ou 0 para interromper:')
+      idade = parseInt(idade)
+      if (idade != 0 && idade < 21) {
+        contador1++
+      } else if (idade > 50) {
+        contador2++
+      }
+    } while (idade != 0)
+    {
+      document.write(
+        '<p>Foram contabilizadas ' +
+          contador1 +
+          'pessoas menores de 21 anos</p>'
+      )
+      document.write(
+        '<p>Foram contabilizadas ' +
+          contador2 +
+          'pessoas maiores de 50 anos</p>'
+      )
+    }
+  </script>
+</html>

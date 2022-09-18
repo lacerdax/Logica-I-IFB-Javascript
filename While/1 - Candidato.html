@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var idade = prompt('Insira a idade ou 0 para encerrar o programa: ')
+    var sexo = prompt('Insira o sexo: ')
+    var experiencia = prompt('Tem experiencia? s para sim e n para não')
+    var contadorf = 0
+    var contadorm = 0
+    var contadore = 0
+    var media = 0
+    while (idade != 0) {
+      if (sexo == 'm' && experiencia == 's') {
+        contadore++
+        media = idade / contadore
+      } else if (sexo == 'f' || sexo == 'F') {
+        contadorf++
+      } else if (sexo == 'm' || sexo == 'M') {
+        contadorm++
+      }
+
+      var idade = prompt('Insira a idade ou 0 para encerrar o programa: ')
+      var sexo = prompt('Insira o sexo: ')
+      var experiencia = prompt('Tem experiencia? s para sim e n para não')
+    }
+    document.write('Quantidade de pessoas do sexo F: ' + contadorf + '<br/>')
+    document.write('Quantidade de pessoas do sexo M: ' + contadorm + '<br/>')
+    document.write(
+      'Quantidade de homens com experiência: ' + contadore + '<br/>'
+    )
+    document.write('Média: ' + media + '<br/>')
+  </script>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var f = prompt('Insira uma temperatura em Fahrenheit: ')
+    var celsius = celsius(f)
+    function celsius(f) {
+      var c = ((f - 32) / 9) * 5
+      return c
+    }
+    document.write('Temperatura convertida para celsius: ' + celsius)
+  </script>
+</html>

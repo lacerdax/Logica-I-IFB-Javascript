@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body></body>
+  <script type="text/javascript">
+    var estadocivil = prompt(
+      'Insira a primeira letra do estado civil da pessoa: '
+    )
+
+    switch (estadocivil) {
+      case 's':
+      case 'S':
+        document.write('Solteiro')
+        break
+
+      case 'c':
+      case 'C':
+        document.write('Casado')
+        break
+
+      case 'v':
+      case 'V':
+        document.write('Viúvo')
+        break
+
+      case 'd':
+      case 'D':
+        document.write('Divorciado')
+        break
+
+      default:
+        document.write('Error')
+    }
+  </script>
+</html>

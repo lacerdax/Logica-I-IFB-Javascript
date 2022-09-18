@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var num = 0
+    var contador = 0
+    var funcao = dobro()
+    while (contador <= 2) {
+      contador++
+      num = Number(prompt('Insira um número: '))
+      document.write('Número digitado: ' + num + '<br/> ')
+      document.write('Dobro do número digitado: ' + dobro() + '<br/>' + '<br/>')
+    }
+    function dobro() {
+      multiplicar = num * 2
+      return multiplicar
+    }
+  </script>
+</html>

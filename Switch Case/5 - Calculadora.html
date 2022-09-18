@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body></body>
+  <script>
+    var numero1 = Number(prompt('Insira o primeiro número: '))
+    var operador = prompt('Insira o operador: ')
+    var numero2 = Number(prompt('Insira o segundo número: '))
+    var calculadora = 0
+
+    switch (operador) {
+      case '*':
+        calculadora = numero1 * numero2
+        document.write(
+          'A multiplicação desses 2 números são: ' + calculadora.toFixed(2)
+        )
+        break
+
+      case '+':
+        calculadora = numero1 + numero2
+        document.write('A soma desses 2 números são: ' + calculadora.toFixed(2))
+        break
+
+      case '/':
+        calculadora = numero1 / numero2
+        document.write(
+          'A divisão desses 2 números são: ' + calculadora.toFixed(2)
+        )
+        break
+
+      case '**':
+        calculadora = numero1 ** numero2
+        document.write(
+          'A exponenciação desse número é: ' + calculadora.toFixed(2)
+        )
+        break
+      default:
+        document.write('Operação não identificada')
+    }
+  </script>
+</html>

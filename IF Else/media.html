@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Estrutura de decisao</title>
+</head>
+<body>
+	
+</body>	
+	<script type="text/javascript">
+		var prova1 = prompt('Insira a nota da prova 1: ')
+		prova1 = parseFloat(prova1)
+		var prova2 = prompt('Insira a nota da prova 2: ')
+		prova2 = parseFloat(prova2)
+		var prova3 = prompt('Insira a nota da prova 3: ')
+		prova3 = parseFloat(prova3)
+		var peso2 = prova1 * 2
+		var peso3 = prova3 * 3
+		var peso5 = prova3 * 5
+		var media = peso2 + peso3 + peso5
+		var mediafinal = media / 10
+
+		if (mediafinal >= 7){
+			alert('Aprovado')
+		} else {
+			alert('Reprovado')
+		}
+	</script>
+</html>
