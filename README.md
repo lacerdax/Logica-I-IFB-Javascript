@@ -3,7 +3,7 @@
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 
-> Exercícios de Lógica de Programação.
+> Exercícios de Lógica de Programação realizados no primeiro módulo do curso de Desenvolvimento de Sistemas.
 
 ## 📫 Contribuindo para <nome_do_projeto>
 
